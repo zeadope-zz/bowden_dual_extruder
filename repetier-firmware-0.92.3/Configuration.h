@@ -95,7 +95,7 @@
 #define EXT0_ADVANCE_BACKLASH_STEPS 0
 #define EXT0_WAIT_RETRACT_TEMP 150
 #define EXT0_WAIT_RETRACT_UNITS 2
-#define EXT0_SELECT_COMMANDS "M340 P0 S800\n" // Servo position in ms EXT0 // Prime settings in slicing software
+#define EXT0_SELECT_COMMANDS "M340 P0 S820 R600\nG4 P1000\n" // P=port, S=Servo position in ms EXT0, !R=auto off delay MUST be long enough for servo to reach dest. // Prime settings in slicing software
 #define EXT0_DESELECT_COMMANDS "" // Retract settings in slicing software
 #define EXT0_EXTRUDER_COOLER_PIN 12
 #define EXT0_EXTRUDER_COOLER_SPEED 255 // z3dope 14:48 24-02-2016 reason Sunon fan
@@ -130,7 +130,7 @@
 #define EXT1_ADVANCE_BACKLASH_STEPS EXT0_ADVANCE_BACKLASH_STEPS
 #define EXT1_WAIT_RETRACT_TEMP EXT0_WAIT_RETRACT_TEMP
 #define EXT1_WAIT_RETRACT_UNITS EXT0_WAIT_RETRACT_UNITS
-#define EXT1_SELECT_COMMANDS "M340 P0 S2250\n" // Servo postion in ms EXT1 // Prime settings in slicing software
+#define EXT1_SELECT_COMMANDS "M340 P0 S2250 R600\nG4 P1000\n" // P=port, S=Servo position in ms EXT0, !R=auto off delay MUST be long enough for servo to reach dest. // Prime settings in slicing software
 #define EXT1_DESELECT_COMMANDS "" // Retract settings in slicing software
 #define EXT1_EXTRUDER_COOLER_PIN EXT0_EXTRUDER_COOLER_PIN
 #define EXT1_EXTRUDER_COOLER_SPEED EXT0_EXTRUDER_COOLER_SPEED
@@ -374,7 +374,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_XY_SPEED 150
 #define Z_PROBE_SWITCHING_DISTANCE 0.2
 #define Z_PROBE_REPETITIONS 5
-#define Z_PROBE_HEIGHT 1.685 // 0.6 // z3Dope 20161101 12:45
+#define Z_PROBE_HEIGHT 0.23 // 0.6 // z3Dope 20161101 12:45
 #define Z_PROBE_START_SCRIPT ""
 #define Z_PROBE_FINISHED_SCRIPT ""
 #define FEATURE_AUTOLEVEL true 
