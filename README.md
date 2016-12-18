@@ -2,7 +2,7 @@
 For more information check:
 http://www.thingiverse.com/thing:1888865 - Bowden dual/quad extrusion extruder (single-nozzle single-drive) + video
 
-This Repo exists so that anyone enjoy this extruder.
+This Repo exists so that anyone can enjoy this extruder.
 
 ### Printer firmware
 In your printer's firmware (Marlin, Repetier or other) make sure you setup a delay for as long as it takes for your servo to move fully.
@@ -24,7 +24,7 @@ With the Arduino Due and RAMPS-FD you can have a thrird extruder stepper motor f
 
 *For Cura 2.3.1 all you have to do is change the extruder start and end G-Code within the custom printer definition file from Cura 2.3.1 to suit your printer.
 And change the start and end G-Code of the extruders definition files from Cura 2.3.1 to suit your retraction and priming distances. This depends on the distance between the tip of the nozzle to the retract resting position within the filament merger.
-Make sure you add a delay on the first line of your extruder end G-code that is more than your servo delay in ms in the firmware. For instance G-Code would be: "G4 700\n ; rest of Cura EXT# end g-code", if your servo delay is 600 ms in the firmware.
+Make sure you add a delay on the first line of your extruder end G-Code that is more than your servo delay in ms in the firmware. For instance G-Code would be: "G4 700\n ; rest of Cura EXT# end g-code", if your servo delay is 600 ms in the firmware.
 If you do it that way, your G-Code will start 100 ms after the servo is done moving selecting the other filament. Hope this make any sense.
 I have already added this to my Configuration.h and Cura 15.04.6 profile, both available in this repo.*
 
