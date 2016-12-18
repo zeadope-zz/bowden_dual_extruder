@@ -4,7 +4,12 @@ http://www.thingiverse.com/thing:1888865 - Bowden dual/quad extrusion extruder (
 
 This Repo exists so that anyone enjoy this extruder.
 
-### Cura 2.3.1 Custom printer
+### Cura 15.04.6 - Easy option
+For the older version, that still works fine, I have added a Configuration file you can simply load within Cura.
+Before that, make sure your printer has 2 extruders in "Machine -> Machine settings... Extruder count [2]".
+You will have to change the start2, end2 and pre and post switch G-Code to your printer's settings and Y-merger / Dual load/retract nozzle amount.
+
+### Cura 2.3.1 Custom printer - The hard way but more powerfull
 I have included a configuration for Cura 2.3.1 that defines a custom printer with multiple extruders.
 This also included definitions of these extruders and their specific settings for retraction and priming filament at tool change.
 Cura 2.3.1 is awesome since the software allows you to select a material/extruder per STL. Even if you want to print a couple of the same single extrusion STL's you can do so. 
